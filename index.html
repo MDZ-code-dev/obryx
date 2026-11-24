@@ -9,7 +9,7 @@
 <meta property="og:description" content="An experimental Fedora KDE Plasma desktop. Download the live ISO and try it from a USB stick.">
 <meta property="og:image" content="https://huggingface.co/Gravelle/Obryx-OS/resolve/main/screenshots/home.png">
 <meta name="theme-color" content="#0b0d10">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4 56 18v28L32 60 8 46V18z' fill='%230b0d10' stroke='%23a9c7ff' stroke-width='4'/%3E%3Cpath d='M32 4v56M8 18l48 28M56 18 8 46' stroke='%23a9c7ff' stroke-width='2' opacity='.5'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='132 129 466 433'%3E%3Cpath fill='%23a9c7ff' fill-rule='evenodd' d='M 383 341 166 387 140 394 167 415 330 553 Z M 581 285 549 310 451 375 417 400 401 427 381 467 343 554 488 452 Z M 504 147 497 155 385 339 449 313 590 267 559 221 Z M 491 137 308 168 272 208 140 379 185 354 366 261 Z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
   nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .02em; color: var(--text); }
   .brand:hover { text-decoration: none; }
-  .brand svg { width: 26px; height: 26px; }
+  .brand svg { width: 28px; height: 28px; }
   nav ul { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; }
   nav ul a { color: var(--muted); font-size: 15px; }
   nav ul a:hover { color: var(--text); text-decoration: none; }
@@ -62,6 +62,8 @@
   .tag { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: var(--muted); font-size: 14px; }
   .tag b { color: var(--warn); font-weight: 600; }
   h1 { font-size: clamp(44px, 8vw, 84px); line-height: 1.02; letter-spacing: -.035em; margin: 22px 0 18px; font-weight: 700; }
+  h1.logo-title { margin: 30px auto 22px; line-height: 0; }
+  h1.logo-title svg { display: block; width: min(560px, 82vw); height: auto; margin: 0 auto; }
   h1 span { background: linear-gradient(120deg, #fff 10%, var(--accent) 60%, var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .lede { max-width: 640px; margin: 0 auto; color: var(--muted); font-size: clamp(17px, 2.2vw, 20px); }
   .cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 34px 0 14px; }
@@ -156,7 +158,7 @@
 <nav>
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Obryx OS home">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 56 18v28L32 60 8 46V18z" fill="none" stroke="currentColor" stroke-width="4" style="color:var(--accent)"/><path d="M32 4v56M8 18l48 28M56 18 8 46" stroke="var(--accent)" stroke-width="2" opacity=".45"/></svg>
+      <svg viewBox="132 129 466 433" aria-hidden="true"><path fill="var(--accent)" fill-rule="evenodd" d="M 383 341 166 387 140 394 167 415 330 553 Z M 581 285 549 310 451 375 417 400 401 427 381 467 343 554 488 452 Z M 504 147 497 155 385 339 449 313 590 267 559 221 Z M 491 137 308 168 272 208 140 379 185 354 366 261 Z"/></svg>
       Obryx OS
     </a>
     <ul>
@@ -171,7 +173,7 @@
 <header class="hero" id="top">
   <div class="wrap">
     <span class="tag"><b>Alpha</b> <span data-field="title">Obryx OS 0.4 Alpha 4</span></span>
-    <h1><span>Obryx OS</span></h1>
+    <h1 class="logo-title"><svg viewBox="132 129 1768 433" role="img" aria-label="Obryx OS"><defs><linearGradient id="logo-sheen" x1="0" y1="0" x2="1" y2="1"><stop offset=".1" stop-color="#fff"/><stop offset=".6" stop-color="#a9c7ff"/><stop offset="1" stop-color="#7f9cff"/></linearGradient></defs><path fill="url(#logo-sheen)" fill-rule="evenodd" d="M 383 341 166 387 140 394 167 415 330 553 Z M 581 285 549 310 451 375 417 400 401 427 381 467 343 554 488 452 503 423 Z M 504 147 497 155 385 339 449 313 590 267 584 256 Z M 491 137 308 168 272 208 140 379 185 354 366 261 Z M 1614 281 1557 281 1499 376 1440 281 1371 281 1372 285 1425 373 1462 438 1398 543 1481 543 1483 541 1533 444 1619 294 1621 289 Z M 1353 281 1278 281 1260 283 1240 290 1226 302 1218 316 1213 338 1213 472 1277 472 1278 353 1281 345 1285 340 1293 335 1300 333 1380 333 1374 319 Z M 1623 280 1669 330 1702 363 1709 372 1608 473 1693 472 1749 416 1751 416 1806 473 1892 472 1793 373 1793 371 1887 280 1800 280 1750 332 1699 280 Z M 627 277 620 291 614 313 614 396 618 413 628 434 645 453 657 461 676 469 703 473 845 472 863 468 885 457 895 449 903 440 912 426 917 414 921 395 920 307 915 289 903 268 888 253 879 247 859 238 837 234 698 234 678 238 656 248 645 256 635 266 Z M 688 309 693 302 700 296 718 290 819 290 832 294 843 303 850 317 851 381 847 395 838 406 832 410 823 413 713 413 700 408 689 397 684 383 684 321 Z M 940 227 940 472 1125 471 1150 464 1164 456 1174 447 1182 436 1188 424 1193 406 1194 342 1189 321 1183 310 1172 298 1155 288 1128 282 1007 281 1005 227 Z M 1006 334 1103 333 1115 337 1124 345 1128 358 1128 384 1124 398 1114 408 1098 413 1015 413 1010 411 1006 405 Z"/></svg></h1>
     <p class="lede">A sleek, experimental desktop built on Fedora and KDE Plasma. Boot it from a USB stick and try it on your PC without installing anything.</p>
     <div class="cta" id="download">
       <a class="btn primary" data-field="iso-link" href="https://huggingface.co/Gravelle/Obryx-OS/resolve/main/Obryx-OS-0.4-Alpha4-x86_64.iso?download=true">
